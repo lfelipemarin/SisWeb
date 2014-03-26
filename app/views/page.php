@@ -5,26 +5,29 @@
         <title>#TITLE#</title>
         <link rel="stylesheet" type="text/css" href="app/views/css/style.css"/>
     </head>
-    <body>
-        <header id="header">
-            <!--<h1>Page title</h1>-->
-            #HEADER#
-        </header>
-        <nav>
-            #NAVIGATION#         
-        </nav>
-        <section id="intro">
-            #INTRODUCTION#
-        </section>
-        <div id="content">
-            #MAINCONTENT#
-            <aside>
-                #SIDEBAR#
-            </aside>
+    <body class="no-js">
+        <div id="page_content">
+            <div class="container">
+                <header id="header">
+                    <!--<h1>Page title</h1>-->
+                    #HEADER#
+                </header>
+                <nav id="topNav">
+                    #NAVIGATION#         
+                </nav>
+                <section id="intro">
+                    #INTRODUCTION#
+                </section>
+                <div id="content">
+                    #MAINCONTENT#
+                    <aside>
+                        #SIDEBAR#
+                    </aside>
+                </div>
+                <footer>
+                    #FOOTER#
+                </footer>
+            </div>
         </div>
-        <footer>
-            #FOOTER#
-        </footer>
-
     </body>
 </html>

@@ -38,9 +38,7 @@ body#loginform div.container {
     width: 30em;
     margin: 0 auto;
 }
-div {
-    display: block;
-}
+
 
 body#loginform h1, body#loginform a.logo {
     display: block;
@@ -142,12 +140,14 @@ fieldset.tblFooters {
     text-align: right;
     float: none;
     clear: both;
+    background: url(../images/gray-gradient.jpg);
+    background-size: 100%;
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 5px;
 }
 
-input[type=submit], button[type=submit]:not(.mult_submit), input[type=reset], input[name=submit_reset], input.button {
+input[type=submit]{
     margin-left: 14px;
     border: 1px solid #aaa;
     padding: 3px 7px;
@@ -158,7 +158,7 @@ input[type=submit], button[type=submit]:not(.mult_submit), input[type=reset], in
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     text-shadow: 0 1px 0 #fff;
-    /*background-image: url(./themes/svg_gradient.php?from=ffffff&to=cccccc);*/
+    font-weight: bold !important;
     background-size: 100% 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
     background: -webkit-linear-gradient(top, #ffffff, #cccccc);

@@ -14,10 +14,8 @@
                 <!--        <nav>
                             #NAVIGATION#         
                         </nav>-->
-                <form method="post" action="index.php" name="login_form" class="login" style="display: inline">
-                    <div id="fields">
-                        #FORM#
-                    </div>
+                <form method="POST" action="index.php" name="login_form" class="login" style="display: inline">
+                    #FORM#
                 </form>
                 <!--        <div id="content">
                             #MAINCONTENT#
@@ -30,6 +28,5 @@
                         </footer>-->
             </div>
         </div>
-
     </body>
 </html>

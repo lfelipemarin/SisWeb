@@ -54,11 +54,11 @@ class mvc_controller {
    OUTPUT
    HTML | codigo html de la pagina   
    */
-   function historia()
+   function add_conpany()
    {
-		$pagina=$this->load_template('History of Bolivia');				
-		$html = $this->load_page('app/views/modules/m.historia.php');
-		$pagina = $this->replace_content('/\#CONTENIDO\#/ms' ,$html , $pagina);
+		$pagina=$this->load_template('Registrar Empresa');				
+		$html = $this->load_page('app/views/modules/m.register.company.php');
+		$pagina = $this->replace_content('/\#CONTENT1\#/ms' ,$html , $pagina);
 		$this->view_page($pagina);
    }
    
@@ -69,18 +69,18 @@ class mvc_controller {
 		$pagina | string que contiene toda el cocigo HTML de la plantilla 
 	*/
 	function load_template($title='Sin Titulo'){          
-		$pagina = $this->load_page('app/views/page.php');
+		$pagina = $this->load_page('app/views/main.php');
 		$header = $this->load_page('app/views/sections/s.header.php');
 		$pagina = $this->replace_content('/\#HEADER\#/ms' ,$header , $pagina);
 		$pagina = $this->replace_content('/\#TITLE\#/ms' ,$title , $pagina);				
-		$navigation = $this->load_page('app/views/sections/s.navigation.php');
-		$pagina = $this->replace_content('/\#NAVIGATION\#/ms' ,$navigation , $pagina);
-                $intro = $this->load_page('app/views/sections/s.intro.php');
-                $pagina = $this->replace_content('/\#INTRODUCTION\#/ms' ,$intro , $pagina);
+		$navigation = $this->load_page('app/views/sections/s.tabs.php');
+		$pagina = $this->replace_content('/\#TABS\#/ms' ,$navigation , $pagina);
+//                $intro = $this->load_page('app/views/sections/s.intro.php');
+//                $pagina = $this->replace_content('/\#INTRODUCTION\#/ms' ,$intro , $pagina);
 //                $main = $this->load_page('app/views/sections/s.main.php');
 //                $pagina = $this->replace_content('/\#MAINCONTENT\#/ms' ,$main , $pagina);
                 $sidebar = $this->load_page('app/views/sections/s.sidebar.php');
-                $pagina = $this->replace_content('/\#SIDEBAR\#/ms' ,$sidebar , $pagina);
+                $pagina = $this->replace_content('/\#SIDEBAR1\#/ms' ,$sidebar , $pagina);
                 $footer = $this->load_page('app/views/sections/s.footer.php');
                 $pagina = $this->replace_content('/\#FOOTER\#/ms' ,$footer , $pagina);
                 
@@ -110,10 +110,10 @@ class mvc_controller {
 	/* METODO QUE MUESTRA EN PANTALLA EL FORMULARIO DE BUSQUEDA
 	   HTML | codigo html de la pagina  con el buscador incluido
 	*/
-	function buscador(){
-		$pagina=$this->load_template('Busqueda de registros');						
-		$buscador = $this->load_page('app/views/modules/m.buscador.php');
-		$pagina = $this->replace_content('/\#CONTENIDO\#/ms' ,$buscador , $pagina);	
+	function add_contact(){
+		$pagina=$this->load_template('Registrar Contacto');						
+		$buscador = $this->load_page('app/views/modules/m.register.contact.php');
+		$pagina = $this->replace_content('/\#CONTENT1\#/ms' ,$buscador , $pagina);	
 		$this->view_page($pagina);
 	}
 	
