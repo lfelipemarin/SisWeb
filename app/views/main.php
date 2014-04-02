@@ -8,6 +8,7 @@
             body {
                 font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
                 background-color: #42413C;
+                background: #222;
                 margin: 0;
                 padding: 0;
                 color: #000;
@@ -52,7 +53,7 @@
             }
             /* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
             header {
-                background-color: #ADB96E;
+                background-color: #FFF;
             }
             /* ~~ These are the columns for the layout. ~~ 
             
@@ -122,7 +123,7 @@
                 clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
                 left: 0;
                 width: 100%;
-                background: #222;
+                background: #000;
             }
 
 
@@ -192,15 +193,33 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#results").hide();
+                $("#company").click(function() {
+                    $("#results").toggle(300);
+                    $("#results1").hide();
+                });
+            });
+            $(document).ready(function() {
+                $("#results1").hide();
+                $("#contact").click(function() {
+                    $("#results1").toggle(300);
+                    $("#results").hide();
+                });
+            });
+        </script>
     </head>
 
     <body>
 
         <div class="container">
             <header>
-                <h1 style="text-decoration:none; border:0; width:89px; height : 76px; margin : 0; padding : 0;   
-                    background : url(app/views/images/logo.jpg) no-repeat 0 0;" >
-                    <a href="#" style="display : block; height : 76px; text-indent : -9999px; "></a>
+                <h1 style="text-decoration:none; border:0; width:290px; height : 128px; margin : 0; padding : 0;   
+                    background : url(app/views/images/LogoSisLogin.png) no-repeat 0 0;" >
+                    <a href="#" style="display : block; height : 128px; text-indent : -9999px; "></a>
                 </h1>
             </header>
 
@@ -215,6 +234,12 @@
                         <article class="content">
                             <section>
                                 #CONTENT1#
+                            </section>
+                            <section id="results">
+                                #RESULTS#
+                            </section>
+                            <section id="results1">
+                                #RESULTS1#
                             </section>
                             <!-- end .content -->
                         </article>

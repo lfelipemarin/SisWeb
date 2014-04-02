@@ -61,7 +61,7 @@
     }
 
     h1 {
-        font-size: 140%;
+        /*font-size: 140%;*/
         font-weight: bold;
     }
 
@@ -73,6 +73,7 @@
 
     fieldset {
         margin-top: 1em;
+        margin-left: 8px;
         border-radius: 4px 4px 0 0;
         -moz-border-radius: 4px 4px 0 0;
         -webkit-border-radius: 4px 4px 0 0;
@@ -160,7 +161,7 @@
         text-align: right;
         float: none;
         clear: both;
-        background: url(../images/gray-gradient.jpg);
+        /*background: url(../images/gray-gradient.jpg);*/
         background-size: 100%;
         -webkit-border-radius: 0 0 4px 4px;
         -moz-border-radius: 0 0 4px 4px;
@@ -193,7 +194,7 @@
         <h1>Registro de Contacto</h1>
         <form action="index.php" method="post" name="contReg" class="login" style="display: inline">
             <fieldset>
-                <legend>Empresa</legend>
+                <legend>Contacto</legend>
                 <div class="item">
                     <label for="input_id">Id:</label>
                     <input type="text" name="nm_id" id="input_id" value="" 

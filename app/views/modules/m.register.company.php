@@ -5,13 +5,13 @@
         font-size: 82%;
     }
     
-*/    div#loginform {
-/*        margin-top: 7em;*/
+    */    div#loginform {
+        /*        margin-top: 7em;*/
         text-align: left;
         font-size: 82%;
     }
-    
-    
+
+
     div#loginform {
         font-family: sans-serif;
         padding: 0;
@@ -33,9 +33,9 @@
         margin: 0 .5em;
     }
 
-/*    div{
-        display: block;
-    }*/
+    /*    div{
+            display: block;
+        }*/
 
     div#loginform div.container {
         text-align: left;
@@ -61,7 +61,7 @@
     }
 
     h1 {
-        font-size: 140%;
+        /*        font-size: 140%;*/
         font-weight: bold;
     }
 
@@ -73,6 +73,7 @@
 
     fieldset {
         margin-top: 1em;
+        margin-left: 8px;
         border-radius: 4px 4px 0 0;
         -moz-border-radius: 4px 4px 0 0;
         -webkit-border-radius: 4px 4px 0 0;
@@ -152,6 +153,20 @@
     input, select, textarea {
         font-size: 1em;
     }
+    
+    select{
+         border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        box-shadow: 0 1px 2px #ddd;
+        -moz-box-shadow: 0 1px 2px #ddd;
+        -webkit-box-shadow: 0 1px 2px #ddd;
+        background: white;
+        border: 1px solid #aaa;
+        color: #555;
+        padding: 4px;
+        margin: 6px;
+    }
 
     fieldset.tblFooters {
         margin-top: 0;
@@ -160,7 +175,7 @@
         text-align: right;
         float: none;
         clear: both;
-        background: url(../images/gray-gradient.jpg);
+        /*background: url(../images/gray-gradient.jpg);*/
         background-size: 100%;
         -webkit-border-radius: 0 0 4px 4px;
         -moz-border-radius: 0 0 4px 4px;
@@ -228,6 +243,15 @@
                     <label for="input_web">Página Web:</label>
                     <input type="text" name="nm_web" id="input_web" value="" 
                            size="24" class="textfield" required>
+                </div>  
+                <div class="item">
+                    <label for="input_sector">Sector:</label>
+                    <select name="nm_sectors" id="input_sector" class="select">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat" selected>Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>                
                 </div>  
                 <div class="item">
                     <label for="input_date">Fecha de Registro:</label>
